@@ -30,7 +30,7 @@ export default {
       align: "right",
     },
   ],
-  github: "https://github.com/king-song823/shapers.githup.io",
+  github: "https://github.com/king-song823/kingSong",
   sidebar: {
     "/": [
       "introduction/README.md",
