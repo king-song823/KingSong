@@ -1,0 +1,321 @@
+<!doctype html><html class=""><head><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous"/>
+<meta data-react-helmet="true" charset="utf-8"/><meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge"/><meta data-react-helmet="true" name="description" content="Shaper&#x27;s Docs"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1"/><meta data-react-helmet="true" property="og:title" content="Vue3 + TypeScript Cli 模板 · Shaper&#x27;s Docs"/><meta data-react-helmet="true" property="og:description" content="Shaper&#x27;s Docs"/><meta data-react-helmet="true" property="og:type" content="article"/><meta data-react-helmet="true" name="twitter:card" content="summary"/>
+<title data-react-helmet="true">Vue3 + TypeScript Cli 模板 · Shaper&#x27;s Docs</title>
+<link data-react-helmet="true" rel="stylesheet" href="/assets/index.css"/><link data-react-helmet="true" id="prismTheme" rel="stylesheet" href="/assets/prism.css"/>
+<script data-react-helmet="true" >
+    const shouldSetIsDark = document.cookie.includes('is_dark=1') ? true : document.cookie.includes('is_dark=0') ? false : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (shouldSetIsDark) {
+      document.documentElement.classList.add('is_dark');
+      document.getElementById('prismTheme').href = "/assets/prism_tomorrow.css";
+    }
+  </script>
+</head><body><header><h1 class="hide_on_mobile"><a href="/">Shaper&#x27;s Docs</a></h1><nav><ul><li class="show_on_mobile flex_center"><a class="czs-menu-l" href="#" style="background-image:url(&quot;/assets/czs-menu-l.svg&quot;)"></a></li><li class="show_on_mobile"><h1 class="mobile_title"><a href="/">Shaper&#x27;s Docs</a></h1></li><li class="hide_on_mobile"><a href="/shapers/introduction/index.html">It&#x27;s me</a></li><li style="flex-grow:1"></li><li class="hide_on_mobile"><a href="/shapers//about/index.html">About</a></li><li class="flex_center"><a class="czs-github-logo" href="https://github.com/king-song823/kingSong" target="_blank" style="background-image:url(&quot;/assets/czs-github-logo.svg&quot;)"></a></li><li class="toggle_dark flex_center"><span class="czs-sun" style="background-image:url(&quot;/assets/czs-sun.svg&quot;)"></span><span class="czs-sun-l" style="background-image:url(&quot;/assets/czs-sun-l.svg&quot;)"></span><span class="czs-moon" style="background-image:url(&quot;/assets/czs-moon.svg&quot;)"></span><span class="czs-moon-l" style="background-image:url(&quot;/assets/czs-moon-l.svg&quot;)"></span></li></ul></nav></header><aside class="sidebar"><ol class="list_style_none"><li class=""><a href="/introduction/index.html" class="nav_link">Introduction</a></li><li class="unfold"><a href="/technology/index.html" class="nav_link">Technology<span class="czs-angle-up-l" style="background-image:url(&quot;/assets/czs-angle-up-l.svg&quot;)"></span><span class="czs-angle-down-l" style="background-image:url(&quot;/assets/czs-angle-down-l.svg&quot;)"></span></a><ol class="list_style_none" style="height:auto"><li class=""><a href="/technology/vue3.html" class="nav_link">Vue3 + TypeScript</a></li><li class=""><a href="/technology/ts.html" class="nav_link">TypeScript 积累</a></li><li class=""><a href="/technology/你不知道的JS.html" class="nav_link">你不知道的 JS kk</a></li><li class=""><a href="/technology/vcli.html" class="nav_link active">Vue3 + TypeScript Cli 模板</a></li></ol></li><li class="unfold"><a href="#" class="nav_link no_link">Life<span class="czs-angle-up-l" style="background-image:url(&quot;/assets/czs-angle-up-l.svg&quot;)"></span><span class="czs-angle-down-l" style="background-image:url(&quot;/assets/czs-angle-down-l.svg&quot;)"></span></a><ol class="list_style_none" style="height:auto"><li class=""><a href="/life/guitar.html" class="nav_link">Guitar</a></li></ol></li><li class="unfold"><a href="#" class="nav_link no_link">Interview<span class="czs-angle-up-l" style="background-image:url(&quot;/assets/czs-angle-up-l.svg&quot;)"></span><span class="czs-angle-down-l" style="background-image:url(&quot;/assets/czs-angle-down-l.svg&quot;)"></span></a><ol class="list_style_none" style="height:auto"><li class=""><a href="/interview/btyedance.html" class="nav_link">Btyedance</a></li></ol></li><li class="unfold"><a href="#" class="nav_link no_link">Study<span class="czs-angle-up-l" style="background-image:url(&quot;/assets/czs-angle-up-l.svg&quot;)"></span><span class="czs-angle-down-l" style="background-image:url(&quot;/assets/czs-angle-down-l.svg&quot;)"></span></a><ol class="list_style_none" style="height:auto"><li class=""><a href="/study/HowWeLearn.html" class="nav_link">How We Learn</a></li></ol></li></ol></aside><section class="main"><div class="main_article"><article><h1>Vue3 + TypeScript Cli 模板</h1>
+<p>手把手从 0 到 1 构建一个 Vue3 的模板</p>
+<h2 id="1%E5%88%9B%E5%BB%BA%E5%9F%BA%E7%A1%80%E9%A1%B9%E7%9B%AE%E5%8F%8A%E9%85%8D%E7%BD%AE">1.创建基础项目及配置<a class="anchor" href="#1%E5%88%9B%E5%BB%BA%E5%9F%BA%E7%A1%80%E9%A1%B9%E7%9B%AE%E5%8F%8A%E9%85%8D%E7%BD%AE">§</a></h2>
+<ul>
+<li>
+<ol>
+<li>创建项目</li>
+</ol>
+</li>
+</ul>
+<pre class="language-autoit"><code class="language-autoit">vue ui
+</code></pre>
+<p><img src="./imgaes/project1.jpg" alt="创建项目"></p>
+<ul>
+<li>
+<ol start="2">
+<li>功能相关</li>
+</ol>
+</li>
+</ul>
+<p><img src="./imgaes/config1.jpg" alt="">
+<img src="./imgaes/config2.jpg" alt=""></p>
+<ul>
+<li>
+<ol start="3">
+<li>配置相关</li>
+</ol>
+</li>
+</ul>
+<p><img src="./imgaes/config3.jpg" alt=""></p>
+<h2 id="2-%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86">2. 代码管理<a class="anchor" href="#2-%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86">§</a></h2>
+<ul>
+<li>
+<ol>
+<li>初始化本地仓库</li>
+</ol>
+<p>可以下载 Gitkraken,init 找到本地仓库,进行 git 初始化</p>
+</li>
+<li>
+<ol start="2">
+<li>上传远程
+点击 Remote 右侧的+号,上传到远程 github</li>
+</ol>
+<p><img src="./imgaes/remote.jpg" alt="">
+<img src="./imgaes/github.jpg" alt=""></p>
+<p>现在最基础的 v-cli 模板就在你的 github 上啦!</p>
+</li>
+</ul>
+<h2 id="3%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%85%B3%E6%8F%92%E4%BB%B6%E5%92%8C%E9%85%8D%E7%BD%AE">3.添加相关插件和配置<a class="anchor" href="#3%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%85%B3%E6%8F%92%E4%BB%B6%E5%92%8C%E9%85%8D%E7%BD%AE">§</a></h2>
+<h3 id="%E5%88%9D%E5%A7%8B%E4%BE%9D%E8%B5%96">初始依赖<a class="anchor" href="#%E5%88%9D%E5%A7%8B%E4%BE%9D%E8%B5%96">§</a></h3>
+<p><img src="./imgaes/plugins.jpg" alt=""></p>
+<h3 id="%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83%E7%9B%B8%E5%85%B3">代码规范相关<a class="anchor" href="#%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83%E7%9B%B8%E5%85%B3">§</a></h3>
+<h4 id="1-%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E8%A7%84%E8%8C%83eslint--prettier">1. 代码格式规范(eslint + prettier)<a class="anchor" href="#1-%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E8%A7%84%E8%8C%83eslint--prettier">§</a></h4>
+<ul>
+<li>当我们使用v-cli模板时,选择了eslint+ prettier的模式,所以在eslintrc.js中会扩展以下几种依赖</li>
+</ul>
+<pre class="language-autoit"><code class="language-autoit"> extends<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+  <span class="token string">'plugin:vue/vue3-essential'</span><span class="token punctuation">,</span>
+  <span class="token string">'eslint:recommended'</span><span class="token punctuation">,</span>
+  <span class="token string">'@vue/typescript/recommended'</span><span class="token punctuation">,</span>
+  <span class="token string">'@<a class="token email-link" href="mailto:vue/prettier/@typescript">vue/prettier/@typescript</a>-eslint'</span><span class="token punctuation">,</span>
+  <span class="token string">'@vue/prettier'</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">,</span>
+</code></pre>
+<ul>
+<li>之后创建 .prettierrc.js</li>
+</ul>
+<pre class="language-autoit"><code class="language-autoit">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> {
+  printWidth<span class="token punctuation">:</span> <span class="token number">80</span><span class="token punctuation">,</span> <span class="token operator">/</span><span class="token operator">/</span>单行长度
+  tabWidth<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token operator">/</span><span class="token operator">/</span>缩进长度
+  useTabs<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token operator">/</span><span class="token operator">/</span>使用空格代替tab缩进
+  semi<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token operator">/</span><span class="token operator">/</span>句末使用分号
+  singleQuote<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token operator">/</span><span class="token operator">/</span>使用单引号
+  quoteProps<span class="token punctuation">:</span> <span class="token string">'as-needed'</span><span class="token punctuation">,</span> <span class="token operator">/</span><span class="token operator">/</span>仅在必需时为对象的key添加引号
+  jsxSingleQuote<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token operator">/</span><span class="token operator">/</span> jsx中使用单引号
+  trailingComma<span class="token punctuation">:</span> <span class="token string">'all'</span><span class="token punctuation">,</span> <span class="token operator">/</span><span class="token operator">/</span>多行时尽可能打印尾随逗号
+  bracketSpacing<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token operator">/</span><span class="token operator">/</span>在对象前后添加空格<span class="token operator">-</span>eg<span class="token punctuation">:</span> { foo<span class="token punctuation">:</span> bar }
+  jsxBracketSameLine<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token operator">/</span><span class="token operator">/</span>多属性html标签的‘<span class="token operator">></span>’折行放置
+  arrowParens<span class="token punctuation">:</span> <span class="token string">'always'</span><span class="token punctuation">,</span> <span class="token operator">/</span><span class="token operator">/</span>单参数箭头函数参数周围使用圆括号<span class="token operator">-</span>eg<span class="token punctuation">:</span> <span class="token punctuation">(</span>x<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> x
+  requirePragma<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token operator">/</span><span class="token operator">/</span>无需顶部注释即可格式化
+  insertPragma<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token operator">/</span><span class="token operator">/</span>在已被preitter格式化的文件顶部加上标注
+  proseWrap<span class="token punctuation">:</span> <span class="token string">'preserve'</span><span class="token punctuation">,</span> <span class="token operator">/</span><span class="token operator">/</span>不知道怎么翻译
+  htmlWhitespaceSensitivity<span class="token punctuation">:</span> <span class="token string">'ignore'</span><span class="token punctuation">,</span> <span class="token operator">/</span><span class="token operator">/</span>对HTML全局空白不敏感
+  vueIndentScriptAndStyle<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token operator">/</span><span class="token operator">/</span>不对vue中的script及style标签缩进
+  endOfLine<span class="token punctuation">:</span> <span class="token string">'lf'</span><span class="token punctuation">,</span> <span class="token operator">/</span><span class="token operator">/</span>结束行形式
+  embeddedLanguageFormatting<span class="token punctuation">:</span> <span class="token string">'auto'</span><span class="token punctuation">,</span> <span class="token operator">/</span><span class="token operator">/</span>对引用代码进行格式化
+}
+</code></pre>
+<ul>
+<li>创建.prettierignore</li>
+</ul>
+<pre class="language-autoit"><code class="language-autoit">  # Ignore artifacts<span class="token punctuation">:</span>
+  build
+  coverage
+
+  # Ignore all HTML files<span class="token punctuation">:</span>
+  <span class="token operator">*</span><span class="token punctuation">.</span>html
+</code></pre>
+<ul>
+<li>这时候一般来说会出现eslint和prettier的冲突,所以我们需要安装插件</li>
+</ul>
+<pre class="language-autoit"><code class="language-autoit">yarn add <span class="token operator">-</span>D eslint<span class="token operator">-</span>config<span class="token operator">-</span>prettier
+</code></pre>
+<p>然后在.eslintrc.js的extends中添加</p>
+<pre class="language-autoit"><code class="language-autoit"><span class="token string">'plugin:prettier/recommended'</span><span class="token punctuation">,</span>
+
+</code></pre>
+<ul>
+<li>格式化文档
+<ul>
+<li>格式化所有文档: yarn prettier --write .</li>
+<li>格式化指定文档: yarn prettier --write index.js</li>
+<li>检查是否格式化文档: yarn prettier --check .</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-%E4%BB%A3%E7%A0%81%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83cz-customizablecommitlinthuskyconventional-changelog">2. 代码提交规范(cz-customizable+commitlint+husky+conventional-changelog)<a class="anchor" href="#2-%E4%BB%A3%E7%A0%81%E6%8F%90%E4%BA%A4%E8%A7%84%E8%8C%83cz-customizablecommitlinthuskyconventional-changelog">§</a></h4>
+<ul>
+<li>
+<p>书写commit</p>
+<ul>
+<li>
+<p>cz-customizable(可自定义的 Commitizen 插件,可帮助实现一致的提交消息)</p>
+</li>
+<li>
+<p>安装</p>
+<pre class="language-autoit"><code class="language-autoit">yarn add cz<span class="token operator">-</span>customizable <span class="token operator">-</span>D
+</code></pre>
+</li>
+<li>
+<p>配置</p>
+<ul>
+<li>
+<p>在根目录下配置.cz-config.js</p>
+</li>
+<li>
+<p>添加代码</p>
+<pre class="language-autoit"><code class="language-autoit">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> {
+  types<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    {
+      value<span class="token punctuation">:</span> <span class="token string">':sparkles: feat'</span><span class="token punctuation">,</span>
+      name<span class="token punctuation">:</span> <span class="token string">'✨ feat:     新功能'</span>
+    }<span class="token punctuation">,</span>
+    {
+      value<span class="token punctuation">:</span> <span class="token string">':bug: fix'</span><span class="token punctuation">,</span>
+      name<span class="token punctuation">:</span> <span class="token string">'🐛 fix:      修复bug'</span>
+    }<span class="token punctuation">,</span>
+    {
+      value<span class="token punctuation">:</span> <span class="token string">':tada: init'</span><span class="token punctuation">,</span>
+      name<span class="token punctuation">:</span> <span class="token string">'🎉 init:     初始化'</span>
+    }<span class="token punctuation">,</span>
+    {
+      value<span class="token punctuation">:</span> <span class="token string">':pencil2: docs'</span><span class="token punctuation">,</span>
+      name<span class="token punctuation">:</span> <span class="token string">'✏️  docs:     文档变更'</span>
+    }<span class="token punctuation">,</span>
+    {
+      value<span class="token punctuation">:</span> <span class="token string">':lipstick: style'</span><span class="token punctuation">,</span>
+      name<span class="token punctuation">:</span> <span class="token string">'💄 style:    代码的样式美化'</span>
+    }<span class="token punctuation">,</span>
+    {
+      value<span class="token punctuation">:</span> <span class="token string">':recycle: refactor'</span><span class="token punctuation">,</span>
+      name<span class="token punctuation">:</span> <span class="token string">'♻️  refactor: 重构'</span>
+    }<span class="token punctuation">,</span>
+    {
+      value<span class="token punctuation">:</span> <span class="token string">':zap: perf'</span><span class="token punctuation">,</span>
+      name<span class="token punctuation">:</span> <span class="token string">'⚡️ perf:     性能优化'</span>
+    }<span class="token punctuation">,</span>
+    {
+      value<span class="token punctuation">:</span> <span class="token string">':white_check_mark: test'</span><span class="token punctuation">,</span>
+      name<span class="token punctuation">:</span> <span class="token string">'✅ test:     测试'</span>
+    }<span class="token punctuation">,</span>
+    {
+      value<span class="token punctuation">:</span> <span class="token string">':rewind: revert'</span><span class="token punctuation">,</span>
+      name<span class="token punctuation">:</span> <span class="token string">'⏪️ revert:   回退'</span>
+    }<span class="token punctuation">,</span>
+    {
+      value<span class="token punctuation">:</span> <span class="token string">':package: build'</span><span class="token punctuation">,</span>
+      name<span class="token punctuation">:</span> <span class="token string">'📦️ build:    打包'</span>
+    }<span class="token punctuation">,</span>
+    {
+      value<span class="token punctuation">:</span> <span class="token string">':rocket: chore'</span><span class="token punctuation">,</span>
+      name<span class="token punctuation">:</span> <span class="token string">'🚀 chore:    构建/工程依赖/工具'</span>
+    }<span class="token punctuation">,</span>
+    {
+      value<span class="token punctuation">:</span> <span class="token string">':construction_worker: ci'</span><span class="token punctuation">,</span>
+      name<span class="token punctuation">:</span> <span class="token string">'👷 ci:       CI related changes'</span>
+    }
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  messages<span class="token punctuation">:</span> {
+    type<span class="token punctuation">:</span> <span class="token string">'请选择提交类型(必填)'</span><span class="token punctuation">,</span>
+    customScope<span class="token punctuation">:</span> <span class="token string">'请输入文件修改范围(可选)'</span><span class="token punctuation">,</span>
+    subject<span class="token punctuation">:</span> <span class="token string">'请简要描述提交(必填)'</span><span class="token punctuation">,</span>
+    body<span class="token punctuation">:</span> <span class="token string">'请输入详细描述(可选)'</span><span class="token punctuation">,</span>
+    breaking<span class="token punctuation">:</span> <span class="token string">'列出任何BREAKING CHANGES(可选)'</span><span class="token punctuation">,</span>
+    footer<span class="token punctuation">:</span> <span class="token string">'请输入要关闭的issue(可选)'</span><span class="token punctuation">,</span>
+    confirmCommit<span class="token punctuation">:</span> <span class="token string">'确定提交此说明吗？'</span>
+  }<span class="token punctuation">,</span>
+  allowCustomScopes<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  allowBreakingChanges<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">':sparkles: feat'</span><span class="token punctuation">,</span> <span class="token string">':bug: fix'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  subjectLimit<span class="token punctuation">:</span> <span class="token number">72</span>
+}
+
+</code></pre>
+</li>
+<li>
+<p>在package.json中添加脚本</p>
+<pre class="language-autoit"><code class="language-autoit"><span class="token string">"scripts"</span> <span class="token punctuation">:</span> {
+  <span class="token string">"ct"</span><span class="token punctuation">:</span> <span class="token string">"git add . &amp;&amp; cz-customizable"</span>
+}
+</code></pre>
+</li>
+<li>
+<p>这时候当你执行yarn run ct时会显示如下图</p>
+<p><img src="imgaes/git-commit.jpg" alt=""></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>校验commit</p>
+<ul>
+<li>
+<p>commitlint</p>
+<ul>
+<li>检查 commit 是否符合某种规范的校验工具</li>
+<li>安装</li>
+</ul>
+<pre class="language-autoit"><code class="language-autoit">yarn add <span class="token variable">@commitlint</span><span class="token operator">/</span>cli commitlint<span class="token operator">-</span>config<span class="token operator">-</span>git<span class="token operator">-</span>commit<span class="token operator">-</span>emoji commitlint<span class="token operator">-</span>config<span class="token operator">-</span>cz <span class="token operator">-</span>D
+</code></pre>
+<ul>
+<li>
+<p>配置</p>
+<ul>
+<li>根目录创建commitlint.config.js</li>
+<li>添加代码</li>
+</ul>
+<pre class="language-autoit"><code class="language-autoit">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> {
+  extends<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'git-commit-emoji'</span><span class="token punctuation">,</span> <span class="token string">'cz'</span><span class="token punctuation">]</span>
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>husky</p>
+<ul>
+<li>
+<p>针对 git 流程自动执行 commitlint</p>
+</li>
+<li>
+<p>安装</p>
+<pre class="language-autoit"><code class="language-autoit">yarn add husky <span class="token operator">-</span>D
+</code></pre>
+</li>
+<li>
+<p>配置</p>
+<pre class="language-autoit"><code class="language-autoit">npm set<span class="token operator">-</span>script prepare <span class="token string">"husky install"</span>
+npm run prepare
+npx husky add <span class="token punctuation">.</span>husky<span class="token operator">/</span>commit<span class="token operator">-</span>msg <span class="token string">'npx --no-install commitlint --edit "$1"'</span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>生成日志</p>
+<ul>
+<li>
+<p>conventional-changelog</p>
+<ul>
+<li>可以根据项目的 commit 和 metadata 信息自动生成 changelogs 和 release notes 的系列工具</li>
+</ul>
+</li>
+<li>
+<p>安装</p>
+<ul>
+<li>yarn add conventional-changelog-cli conventional-changelog-gitmoji-config -D</li>
+</ul>
+</li>
+<li>
+<p>配置</p>
+<p>在package.json中添加次脚本</p>
+<pre class="language-autoit"><code class="language-autoit"><span class="token string">"scripts"</span> <span class="token punctuation">:</span> {
+  <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    <span class="token string">"changelog"</span><span class="token punctuation">:</span> <span class="token string">"conventional-changelog -p gitmoji-config -i CHANGELOG.md -s"</span>
+  }
+</code></pre>
+</li>
+<li>
+<p>运行 yarn run changelog</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="3layout-%E5%B1%82-%E2%98%91%EF%B8%8F">3.layout 层 ☑️<a class="anchor" href="#3layout-%E5%B1%82-%E2%98%91%EF%B8%8F">§</a></h2>
+<h3 id="31-%E7%A9%BA-%E2%98%91%EF%B8%8F">3.1 空 ☑️<a class="anchor" href="#31-%E7%A9%BA-%E2%98%91%EF%B8%8F">§</a></h3>
+<h3 id="32-%E5%AF%BC%E8%88%AA%E5%B1%82">3.2 导航层<a class="anchor" href="#32-%E5%AF%BC%E8%88%AA%E5%B1%82">§</a></h3>
+<h2 id="4lib-%E5%B1%82">4.lib 层<a class="anchor" href="#4lib-%E5%B1%82">§</a></h2>
+<h3 id="41-axios-%E7%9A%84%E5%B0%81%E8%A3%85">4.1 axios 的封装<a class="anchor" href="#41-axios-%E7%9A%84%E5%B0%81%E8%A3%85">§</a></h3>
+<h3 id="42-%E5%9B%BD%E9%99%85%E5%8C%96">4.2 国际化<a class="anchor" href="#42-%E5%9B%BD%E9%99%85%E5%8C%96">§</a></h3>
+<h3 id="43-%E6%8F%92%E4%BB%B6">4.3 插件<a class="anchor" href="#43-%E6%8F%92%E4%BB%B6">§</a></h3>
+<h2 id="5router-%E5%B1%82-%E2%98%91%EF%B8%8F">5.router 层 ☑️<a class="anchor" href="#5router-%E5%B1%82-%E2%98%91%EF%B8%8F">§</a></h2>
+<h2 id="6-store-%E5%B1%82">6. store 层<a class="anchor" href="#6-store-%E5%B1%82">§</a></h2>
+<h2 id="7-types-%E5%A3%B0%E6%98%8E">7. types 声明<a class="anchor" href="#7-types-%E5%A3%B0%E6%98%8E">§</a></h2>
+<h2 id="8utils-%E5%B1%82">8.utils 层<a class="anchor" href="#8utils-%E5%B1%82">§</a></h2>
+<h2 id="9views-%E4%B8%9A%E5%8A%A1%E5%B1%82">9.views 业务层<a class="anchor" href="#9views-%E4%B8%9A%E5%8A%A1%E5%B1%82">§</a></h2>
+<h2 id="10micro-service-%E5%B1%82">10.micro-service 层<a class="anchor" href="#10micro-service-%E5%B1%82">§</a></h2>
+<h3 id="1%E4%BD%BF%E7%94%A8-vue-cli-%E5%88%9B%E5%BB%BA-ts-%E9%A1%B9%E7%9B%AE">1.使用 vue-cli 创建 TS 项目<a class="anchor" href="#1%E4%BD%BF%E7%94%A8-vue-cli-%E5%88%9B%E5%BB%BA-ts-%E9%A1%B9%E7%9B%AE">§</a></h3></article><div class="prev_next"><a class="prev button" href="/technology/你不知道的JS.html">«  你不知道的 JS kk</a><a class="next button" href="/life/guitar.html">Guitar  »</a></div></div><aside class="main_toc_container nav_link_container"><div class="main_toc"><nav class="toc"><ol><li><a href="#1%E5%88%9B%E5%BB%BA%E5%9F%BA%E7%A1%80%E9%A1%B9%E7%9B%AE%E5%8F%8A%E9%85%8D%E7%BD%AE">1.创建基础项目及配置</a></li><li><a href="#2-%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86">2. 代码管理</a></li><li><a href="#3%E6%B7%BB%E5%8A%A0%E7%9B%B8%E5%85%B3%E6%8F%92%E4%BB%B6%E5%92%8C%E9%85%8D%E7%BD%AE">3.添加相关插件和配置</a><ol><li><a href="#%E5%88%9D%E5%A7%8B%E4%BE%9D%E8%B5%96">初始依赖</a></li><li><a href="#%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83%E7%9B%B8%E5%85%B3">代码规范相关</a><ol></ol></li></ol></li><li><a href="#3layout-%E5%B1%82-%E2%98%91%EF%B8%8F">3.layout 层 ☑️</a><ol><li><a href="#31-%E7%A9%BA-%E2%98%91%EF%B8%8F">3.1 空 ☑️</a></li><li><a href="#32-%E5%AF%BC%E8%88%AA%E5%B1%82">3.2 导航层</a></li></ol></li><li><a href="#4lib-%E5%B1%82">4.lib 层</a><ol><li><a href="#41-axios-%E7%9A%84%E5%B0%81%E8%A3%85">4.1 axios 的封装</a></li><li><a href="#42-%E5%9B%BD%E9%99%85%E5%8C%96">4.2 国际化</a></li><li><a href="#43-%E6%8F%92%E4%BB%B6">4.3 插件</a></li></ol></li><li><a href="#5router-%E5%B1%82-%E2%98%91%EF%B8%8F">5.router 层 ☑️</a></li><li><a href="#6-store-%E5%B1%82">6. store 层</a></li><li><a href="#7-types-%E5%A3%B0%E6%98%8E">7. types 声明</a></li><li><a href="#8utils-%E5%B1%82">8.utils 层</a></li><li><a href="#9views-%E4%B8%9A%E5%8A%A1%E5%B1%82">9.views 业务层</a></li><li><a href="#10micro-service-%E5%B1%82">10.micro-service 层</a><ol><li><a href="#1%E4%BD%BF%E7%94%A8-vue-cli-%E5%88%9B%E5%BB%BA-ts-%E9%A1%B9%E7%9B%AE">1.使用 vue-cli 创建 TS 项目</a></li></ol></li></ol></nav></div></aside></section><footer>Powered by&amp;nbsp;<a href="https://github.com/xcatliu/pagic" target="_blank">Pagic</a></footer><div class="tools flex_center hide_on_mobile"><a class="czs-pen button" href="https://github.com/king-song823/kingSong/edit/main/./technology/vcli.md" target="_blank" style="background-image:url(&quot;/assets/czs-pen.svg&quot;)"></a><a class="czs-angle-up-l button" href="#" style="background-image:url(&quot;/assets/czs-angle-up-l.svg&quot;)"></a></div><script src="https://cdn.pagic.org/react@18.2.0/umd/react.production.min.js"></script><script src="https://cdn.pagic.org/react-dom@18.2.0/umd/react-dom.production.min.js"></script><script type="module" src="/index.js"></script></body></html>
