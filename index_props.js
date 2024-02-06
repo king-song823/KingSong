@@ -8,7 +8,7 @@ export default {
     'outputPath': "index.html",
     'title': undefined,
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<p><img src="./images/tobeaman.png" alt="to be a man"></p>\n<pre><code>风吹落枯叶，枯叶滋养土壤，肥沃的土壤帮助果实，缓慢而坚定的生长\n</code></pre>\n<ul>\n<li>启动:\npagic build --watch --serve</li>\n</ul>\n<ul>\n<li>访问地址:</li>\n<li>213123144444<!-- [ shaper.run](https://ink-song.github.io/shapers/) -->\n</li>\n</ul>'
+            __html: '<p><img src="./images/tobeaman.png" alt="to be a man"></p>\n<pre><code>风吹落枯叶，枯叶滋养土壤，肥沃的土壤帮助果实，缓慢而坚定的生长\n</code></pre>\n<!-- - 启动:\n  pagic build --watch --serve -->'
         } }),
     'head': React.createElement(React.Fragment, null,
         React.createElement("link", { crossOrigin: "anonymous", href: "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css", integrity: "sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X", rel: "stylesheet" })),
@@ -21,7 +21,7 @@ export default {
         React.createElement("a", { href: "https://github.com/xcatliu/pagic", target: "_blank" }, "Pagic")),
     'contentTitle': undefined,
     'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<p><img src="./images/tobeaman.png" alt="to be a man"></p>\n<pre><code>风吹落枯叶，枯叶滋养土壤，肥沃的土壤帮助果实，缓慢而坚定的生长\n</code></pre>\n<ul>\n<li>启动:\npagic build --watch --serve</li>\n</ul>\n<ul>\n<li>访问地址:</li>\n<li>213123144444<!-- [ shaper.run](https://ink-song.github.io/shapers/) -->\n</li>\n</ul>'
+            __html: '<p><img src="./images/tobeaman.png" alt="to be a man"></p>\n<pre><code>风吹落枯叶，枯叶滋养土壤，肥沃的土壤帮助果实，缓慢而坚定的生长\n</code></pre>\n<!-- - 启动:\n  pagic build --watch --serve -->'
         } }),
     'toc': null,
     'author': "ink-song",
@@ -29,8 +29,8 @@ export default {
         "ink-song"
     ],
     'date': "2024-02-05T09:41:51.000Z",
-    'updated': "2024-02-05T13:39:29.000Z",
-    'excerpt': "风吹落枯叶，枯叶滋养土壤，肥沃的土壤帮助果实，缓慢而坚定的生长 - 启动: pagic build --watch --serve - 访问地址: - 213123144444",
+    'updated': "2024-02-06T01:18:33.000Z",
+    'excerpt': "风吹落枯叶，枯叶滋养土壤，肥沃的土壤帮助果实，缓慢而坚定的生长 ",
     'cover': "./images/tobeaman.png",
     'sidebar': [
         {
@@ -52,7 +52,7 @@ export default {
                     "pagePath": "technology/ts.md"
                 },
                 {
-                    "text": "你不知道的 JS kk",
+                    "text": "你不知道的 JS",
                     "link": "technology/你不知道的JS.html",
                     "pagePath": "technology/你不知道的JS.md"
                 },
@@ -64,16 +64,6 @@ export default {
             ],
             "pagePath": "technology/README.md",
             "text": "Technology"
-        },
-        {
-            "text": "Life",
-            "children": [
-                {
-                    "text": "Guitar",
-                    "link": "life/guitar.html",
-                    "pagePath": "life/guitar.md"
-                }
-            ]
         },
         {
             "text": "Interview",
@@ -92,6 +82,16 @@ export default {
                     "text": "How We Learn",
                     "link": "study/HowWeLearn.html",
                     "pagePath": "study/HowWeLearn.md"
+                }
+            ]
+        },
+        {
+            "text": "Life",
+            "children": [
+                {
+                    "text": "Guitar",
+                    "link": "life/guitar.html",
+                    "pagePath": "life/guitar.md"
                 }
             ]
         }

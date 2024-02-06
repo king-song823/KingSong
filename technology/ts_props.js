@@ -5,7 +5,7 @@ export default {
         "link": "technology/vue3.html"
     },
     'next': {
-        "text": "你不知道的 JS kk",
+        "text": "你不知道的 JS",
         "link": "technology/你不知道的JS.html"
     },
     config: { "root": "/", ...projectConfig, branch: 'main' },
@@ -64,7 +64,7 @@ export default {
                     "pagePath": "technology/ts.md"
                 },
                 {
-                    "text": "你不知道的 JS kk",
+                    "text": "你不知道的 JS",
                     "link": "technology/你不知道的JS.html",
                     "pagePath": "technology/你不知道的JS.md"
                 },
@@ -76,16 +76,6 @@ export default {
             ],
             "pagePath": "technology/README.md",
             "text": "Technology"
-        },
-        {
-            "text": "Life",
-            "children": [
-                {
-                    "text": "Guitar",
-                    "link": "life/guitar.html",
-                    "pagePath": "life/guitar.md"
-                }
-            ]
         },
         {
             "text": "Interview",
@@ -104,6 +94,16 @@ export default {
                     "text": "How We Learn",
                     "link": "study/HowWeLearn.html",
                     "pagePath": "study/HowWeLearn.md"
+                }
+            ]
+        },
+        {
+            "text": "Life",
+            "children": [
+                {
+                    "text": "Guitar",
+                    "link": "life/guitar.html",
+                    "pagePath": "life/guitar.md"
                 }
             ]
         }

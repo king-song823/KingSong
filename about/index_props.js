@@ -8,7 +8,7 @@ export default {
     'outputPath': "about/index.html",
     'title': "About",
     'content': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<h1>About</h1>\n<p>The about page.\n方式了</p>'
+            __html: '<h1>About</h1>\n<p>The about page.</p>'
         } }),
     'head': React.createElement(React.Fragment, null,
         React.createElement("link", { crossOrigin: "anonymous", href: "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css", integrity: "sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X", rel: "stylesheet" })),
@@ -21,7 +21,7 @@ export default {
         React.createElement("a", { href: "https://github.com/xcatliu/pagic", target: "_blank" }, "Pagic")),
     'contentTitle': React.createElement("h1", { key: "0" }, "About"),
     'contentBody': React.createElement("article", { dangerouslySetInnerHTML: {
-            __html: '<p>The about page.\n方式了</p>'
+            __html: '<p>The about page.</p>'
         } }),
     'toc': null,
     'author': "ink-song",
@@ -29,8 +29,8 @@ export default {
         "ink-song"
     ],
     'date': "2024-02-05T09:41:51.000Z",
-    'updated': "2024-02-05T13:56:31.000Z",
-    'excerpt': "The about page. 方式了",
+    'updated': "2024-02-06T01:18:33.000Z",
+    'excerpt': "The about page.",
     'cover': undefined,
     'sidebar': [
         {
@@ -52,7 +52,7 @@ export default {
                     "pagePath": "technology/ts.md"
                 },
                 {
-                    "text": "你不知道的 JS kk",
+                    "text": "你不知道的 JS",
                     "link": "technology/你不知道的JS.html",
                     "pagePath": "technology/你不知道的JS.md"
                 },
@@ -64,16 +64,6 @@ export default {
             ],
             "pagePath": "technology/README.md",
             "text": "Technology"
-        },
-        {
-            "text": "Life",
-            "children": [
-                {
-                    "text": "Guitar",
-                    "link": "life/guitar.html",
-                    "pagePath": "life/guitar.md"
-                }
-            ]
         },
         {
             "text": "Interview",
@@ -92,6 +82,16 @@ export default {
                     "text": "How We Learn",
                     "link": "study/HowWeLearn.html",
                     "pagePath": "study/HowWeLearn.md"
+                }
+            ]
+        },
+        {
+            "text": "Life",
+            "children": [
+                {
+                    "text": "Guitar",
+                    "link": "life/guitar.html",
+                    "pagePath": "life/guitar.md"
                 }
             ]
         }
