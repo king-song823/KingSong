@@ -1,72 +1,32 @@
-// import { React } from 'https://deno.land/x/pagic/mod.ts';
+name: gh-pages
 
-export default {
-  srcDir: ".",
-  exclude: [],
-  root: "/",
-  theme: "docs",
-  plugins: [
-    "clean",
-    "init",
-    "md",
-    "tsx",
-    "sidebar",
-    "prev_next",
-    "ga",
-    "script",
-    "layout",
-    "out",
-  ],
-  title: "Shaper's Docs",
-  description: "Shaper's Docs",
-  nav: [
-    {
-      text: "It's me",
-      link: "/shapers/introduction/index.html",
-    },
-    {
-      text: "About",
-      link: "/shapers//about/index.html",
-      align: "right",
-    },
-  ],
-  github: "https://github.com/king-song823/kingSong",
-  sidebar: {
-    "/": [
-      "introduction/README.md",
-      {
-        link: "technology/README.md",
-        children: [
-          "technology/vue3.md",
-          "technology/ts.md",
-          "technology/你不知道的JS.md",
-          "technology/vcli.md",
-        ],
-      },
-      {
-        text: "Life",
-        children: [
-          "life/guitar.md",
-        ],
-      },
-      {
-        text: "Interview",
-        children: [
-          "interview/btyedance.md",
-        ],
-      },
-      {
-        text: "Study",
-        children: [
-          "study/HowWeLearn.md",
-        ],
-      },
-    ],
-  },
-  tools: {
-    editOnGitHub: true,
-    backToTop: true,
-  },
+on:
+  push:
+    branches:
+      - main
 
-  port: 8000,
-};
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Setup deno
+        uses: denolib/setup-deno@v2
+        with:
+          deno-version: v1.x
+
+      - name: Build gh-pages
+        run: |
+          deno --version
+          deno install --unstable --allow-read --allow-write --allow-net --allow-run -n pagic https://deno.land/x/pagic/mod.ts
+          pagic build
+
+      - name: Deploy gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          # cname: shaper.run
