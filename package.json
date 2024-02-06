@@ -1,0 +1,13 @@
+{
+    
+    "name": "kingSong",
+    "version": "1.0.0",
+    "scripts": {
+        "deploy:vercel": "sh deploy-vercel.sh"
+    },
+    "main": "index.js",
+    "repository": "https://github.com/king-song823/kingSong.git",
+    "author": "ink-song <229135518@qq.com>",
+    "license": "MIT",
+    "private": false
+}
