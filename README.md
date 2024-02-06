@@ -2,9 +2,5 @@
 
     风吹落枯叶，枯叶滋养土壤，肥沃的土壤帮助果实，缓慢而坚定的生长
 
-- 启动:
-  pagic build --watch --serve
-
-* 访问地址:
-* 213123144444
-  <!-- [ shaper.run](https://ink-song.github.io/shapers/) -->
+<!-- - 启动:
+  pagic build --watch --serve -->

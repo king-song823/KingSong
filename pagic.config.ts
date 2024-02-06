@@ -26,7 +26,7 @@ export default {
     },
     {
       text: "About",
-      link: "/shapers//about/index.html",
+      link: "/shapers/about/index.html",
       align: "right",
     },
   ],
@@ -43,12 +43,7 @@ export default {
           "technology/vcli.md",
         ],
       },
-      {
-        text: "Life",
-        children: [
-          "life/guitar.md",
-        ],
-      },
+      
       {
         text: "Interview",
         children: [
@@ -59,6 +54,12 @@ export default {
         text: "Study",
         children: [
           "study/HowWeLearn.md",
+        ],
+      },
+      {
+        text: "Life",
+        children: [
+          "life/guitar.md",
         ],
       },
     ],
